@@ -1,0 +1,21 @@
+{{ define "add" }}
+        {{template "header"}}
+          <main >
+            <h1 >Добавление Статьи</h1>
+            <form action="/save_art/" method="POST" >
+                <input type="text" name="title"  placeholder="Ведите название статьи"><br>
+                
+                <textarea  name="anons"  placeholder="Ведите анонс статьи "></textarea>><br>
+           
+                <textarea  name="fulltext"  placeholder="Ведите текст статьи "></textarea>><br>
+                <div >
+                    <button >
+                    Добавить
+                    </button>
+                    </div>
+            </form>
+
+           
+          </main>
+        {{ template "footer"}}
+  {{ end }}

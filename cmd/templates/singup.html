@@ -1,0 +1,45 @@
+{{ define "singup" }}
+        {{template "header"}}
+
+		<main class="px-3">		
+<div class="limiter">
+<div class="container-login100">
+<div class="wrap-login100">
+<form action="/createuser/">
+<span class="login100-form-title">
+Регистрация
+</span>
+<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Name">
+<input class="input100" type="text" name="name" placeholder="Имя">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter Email">
+	<input class="input100" type="text" name="email" placeholder="Email">
+	<span class="focus-input100"></span>
+	</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter password">
+<input class="input100" type="password" name="pass" placeholder="Пароль">
+<span class="focus-input100"></span>
+</div>
+
+<div class="container-login100-form-btn">
+<button class="login100-form-btn">
+Зарегистрироваться
+</button>
+</div>
+<div class="flex-col-c p-t-170 p-b-40">
+<span class="txt1 p-b-9">
+У вас уже есть аккаунта?
+</span>
+<a href="/singin/" class="txt3">
+Войти
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+
+{{ template "footer"}}
+{{ end }}

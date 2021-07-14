@@ -1,0 +1,30 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайт новостей</title>
+
+
+</head>
+<body>
+    <body >
+    
+        <div >
+          <header >
+            <div>
+              <h3 >NEWS</h3>
+              <nav >
+                <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                <a class="nav-link" href="/add/">Добавить</a>
+                {{ range . }}
+                <a >Добро пожаловать {{ .Name}}</a>
+                {{ else }}
+                <a class="nav-link" href="/singin/">Войти</a>
+                {{ end }}
+              </nav>
+            </div>
+          </header>
+          {{ end }}
